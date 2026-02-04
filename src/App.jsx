@@ -98,7 +98,14 @@ const App = () => {
     return (
         <>
         <Header />
-        <main className="max-w-3xl mx-auto px-4 py-8 space-y-6">
+        <main className="
+            flex-1
+            w-full
+            px-3 sm:px-4
+            py-4 sm:py-8
+            sm:max-w-3xl sm:mx-auto
+        "
+        >
             {viewMode !== "list" && (
                 <TaskForm
                     onSave={saveTask}
@@ -122,16 +129,24 @@ const App = () => {
             )}
             {viewMode === "list" && (
             <div
-                className="
-                flex flex-col sm:flex-row sm:items-center sm:justify-between
-                gap-3 mb-6
-                px-4 py-3
-                bg-white rounded-xl
+            className="
+                px-3 sm:px-4
+                py-3
+                bg-white
+                rounded-xl
                 border shadow-sm
-                "
+            "
             >
                 {/* Left: search + count */}
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 w-full">
+                <div
+                className="
+                    flex flex-col
+                    sm:flex-row
+                    sm:items-center
+                    sm:justify-between
+                    gap-3
+                "
+                >
                 {/* Search input */}
                 <input
                     type="text"
