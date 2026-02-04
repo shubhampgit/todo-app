@@ -129,13 +129,13 @@ const App = () => {
             )}
             {viewMode === "list" && (
             <div
-            className="
-                px-3 sm:px-4
-                py-3
-                bg-white
-                rounded-xl
+                className="
+                flex flex-col sm:flex-row sm:items-center sm:justify-between
+                gap-3 mb-6
+                px-4 py-3
+                bg-white rounded-xl
                 border shadow-sm
-            "
+                "
             >
                 {/* Left: search + count */}
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 w-full">
