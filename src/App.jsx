@@ -98,11 +98,12 @@ const App = () => {
     return (
         <>
         <Header />
-        <main className="
+        <main
+        className="
             flex-1
             w-full
-            px-3 sm:px-4
-            py-4 sm:py-8
+            px-3 py-4
+            sm:px-4 sm:py-8
             sm:max-w-3xl sm:mx-auto
         "
         >

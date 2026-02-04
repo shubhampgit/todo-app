@@ -22,7 +22,7 @@ const TaskItem = ({ task, onEdit, onDelete, onToggleStatus }) => {
   return (
     <div
       className="
-        group bg-white rounded-xl p-5 border shadow-sm
+        w-full group bg-white rounded-xl p-5 border shadow-sm
         hover:shadow-md hover:border-gray-300
         transition-all duration-200
       "
